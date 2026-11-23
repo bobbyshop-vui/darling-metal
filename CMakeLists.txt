@@ -51,11 +51,13 @@ add_framework(Metal
 		src/Metal/MTLDepthStencilDescriptor.mm
 		src/Metal/MTLDevice.mm
 		src/Metal/MTLDrawable.mm
+		src/Metal/MTLFunctionConstantValues.mm
 		src/Metal/MTLLibrary.mm
 		src/Metal/MTLPipeline.mm
 		src/Metal/MTLRenderCommandEncoder.mm
 		src/Metal/MTLRenderPipeline.mm
 		src/Metal/MTLSamplerDescriptor.mm
+		src/Metal/MTLStageInputOutputDescriptor.mm
 		src/Metal/MTLStencilDescriptor.mm
 		src/Metal/MTLTexture.mm
 		src/Metal/MTLTextureDescriptor.mm
@@ -119,6 +121,8 @@ add_framework(MetalKit
 	VERSION ${FRAMEWORK_VERSION}
 
 	SOURCES
+		src/MetalKit/MTKTextureLoader.m
+		src/MetalKit/MTKTextureLoaderConstants.m
 		src/MetalKit/MTKView.m
 
 	DEPENDENCIES
@@ -160,6 +164,7 @@ add_framework(MetalPerformanceShaders
 
 	SOURCES
 		src/dummy.c
+		src/MetalPerformanceShaders/MPSImageGaussianBlur.m
 
 	DEPENDENCIES
 		system
