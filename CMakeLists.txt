@@ -41,6 +41,7 @@ add_framework(Metal
 
 	SOURCES
 		src/Metal/Metal.mm
+		src/Metal/XcodeLazySymbols.mm
 		src/Metal/MTLBuffer.mm
 		src/Metal/MTLCaptureManager.mm
 		src/Metal/MTLCommandBuffer.mm
@@ -124,6 +125,7 @@ add_framework(MetalKit
 		src/MetalKit/MTKTextureLoader.m
 		src/MetalKit/MTKTextureLoaderConstants.m
 		src/MetalKit/MTKView.m
+		src/MetalKit/XcodeLazySymbols.m
 
 	DEPENDENCIES
 		AppKit
